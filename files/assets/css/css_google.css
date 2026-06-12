@@ -1,0 +1,122 @@
+body{
+  background-color: transparent;
+  background-image: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+input#cari_doc {
+    font-size: 1rem;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.input-group-append .input-group-text, .input-group-prepend .input-group-text {
+  background-color: transparent;
+}
+
+.container{
+  margin-top: 100px;
+}
+
+.microphone{
+  border-top-right-radius: 32px !important;
+  border-bottom-right-radius: 32px !important;
+  background-color: #fff;
+}
+
+.google{
+  border-top-left-radius: 32px !important;
+  border-bottom-left-radius: 32px !important;
+  background-color: #fff;
+}
+
+.input-group-prepend {
+  margin-right: -2px !important;
+}
+
+.input-group-append {
+  margin-left: -2px !important;
+}
+
+.form-control:focus {
+  color: #495057; 
+  background-color: #fff;
+  border-color: #ced4da;
+  outline: 0;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.form-control{
+  border-right: 0 !important;
+  border-left: 0 !important;
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .input-group-prepend {
+      margin-right: -15px !important;
+    }
+
+    .input-group-lg>.form-control {
+      padding: .1rem 0.19rem;
+    }
+
+    input#cari_doc {
+      font-size: 12px;
+    }
+
+    .img-document {
+        width: 70%;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .input-group-lg>.form-control {
+      padding: .1rem 0.19rem;
+    }
+
+    .img-document {
+        width: 70%;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .input-group-lg>.input-group-prepend>.input-group-text {
+      padding: 0.2rem 0.1rem;
+    }
+
+    .input-group-lg>.input-group-append>.input-group-text {
+      padding: 0.2rem 0.1rem;
+    }
+
+    .input-group-lg>.form-control {
+      padding: .1rem 0.19rem;
+    }
+
+    .img-document {
+        width: 70%;
+    }
+
+    input#cari_doc {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .ui-widget.ui-widget-content {
+      left: 5% !important;
+    }
+}
